@@ -14,6 +14,11 @@
         <a th:href="@{users/new}"><button type="button" class="btn btn-primary">Add New User</button>
         </a>
     </div>
+
+    <div th:if="${message}" class="alert alert-success text-center">
+        [[${message}]]
+    </div>
+
     <table class="table table-bordered">
         <thead class="thead-dark">
         <tr>

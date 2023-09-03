@@ -10,10 +10,6 @@
 <div class="container-fluid">
     <div class="text-center"><h2>Add New User</h2></div>
 
-    <div th:if="${message}" class="alert alert-success text-center">
-        [[${message}]]
-    </div>
-
     <form th:action="@{/users/save}" method="post"
           style="max-width: 500px; margin: 0 auto;">
         <div class="border border-secondary rounded p-3">
